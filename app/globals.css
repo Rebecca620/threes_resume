@@ -6,16 +6,22 @@
 
 html,
 body {
-  width: 100%;
-  min-height: 100%;
+  width: 100vw;
+  height: 100svh;
+  min-height: 720px;
   margin: 0;
+  padding: 0;
   overflow: hidden;
   background: #172820;
 }
 
 .journey-shell {
   width: 100vw;
-  height: 100dvh;
+  height: 100svh;
+  min-height: 720px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .journey-frame {
@@ -23,4 +29,12 @@ body {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+@media (max-width: 760px) {
+  html,
+  body,
+  .journey-shell {
+    min-height: 100svh;
+  }
 }

@@ -3,7 +3,7 @@ export default function Home() {
     <main className="journey-shell">
       <iframe
         className="journey-frame"
-        src="/mountain-journey.html"
+        src="/mountain-journey.html?mode=production"
         title="Interactive mountain portfolio journey"
         allow="fullscreen"
       />
